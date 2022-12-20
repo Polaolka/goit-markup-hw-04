@@ -145,12 +145,14 @@ header {
 
 /* Hero */
 .hero {
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--dark-bg-color);
     text-align: center;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url('../images/hero_bg.jpg');
+    background-size: contain;
 }
 
 .hero-title {
