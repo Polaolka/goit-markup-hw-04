@@ -6,6 +6,7 @@
     --light-bg-color: #F5F4FA;
     --dark-bg-color: #2F303A;
     --button-color: #F5F4FA;
+    --icons-color: #AFB1B8;
 }
 
 body {
@@ -90,8 +91,6 @@ header {
     margin-left: 50px;
 }
 
-
-
 .site-nav .link.current {
     color: var(--acsent-color);
 }
@@ -116,25 +115,32 @@ header {
     text-decoration: none;
 }
 
+
+.link.flex-wrapper {
+    align-items: center;
+}
+
+
 .icon {
     display: inline-block;
-    margin-right: 10px;
     fill: currentcolor;
 }
 
 .envelope {
-    width: 16px;
-    height: 12px;
+    margin-right: 10px;
+    width: 30px;
+    height: 18px;
 }
 
 .smartphon {
-    width: 12px;
-    height: 16px;
+    margin-right: 10px;
+    width: 18px;
+    height: 30px;
 }
 
 
 .social-icon {
-    fill: var(--main-text-color);
+    fill: var(--icons-color);
     position: absolute;
     width: 20px;
     height: 20px;
@@ -152,7 +158,8 @@ header {
     text-align: center;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url('../images/hero_bg.jpg');
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -194,11 +201,14 @@ header {
 }
 
 .icons-features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
-    padding: 25px 100px;
     margin-bottom: 30px;
     background: var(--light-bg-color);
+    border-radius: 4px;
 }
 
 .li-features:last-child {
@@ -325,7 +335,9 @@ button {
 }
 
 .li-clients {
-    padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 92px;
     width: calc((100%-150px)/6);
     border: 1px solid rgba(175, 177, 184, 1);
@@ -341,9 +353,9 @@ button {
 }
 
 .clients-logo {
-    fill: var(--main-text-color);
-    width: 106px;
-    height: 60px;
+    fill: var(--icons-color);
+    width: 85px;
+    height: 48px;
 }
 
 .clients-logo:hover {
@@ -401,10 +413,13 @@ address li {
 
 .join .list {
     width: 206px;
+    align-items: baseline;
 }
 
 .link-social {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -479,7 +494,12 @@ footer .social-icon {
     margin-bottom: 30px;
 }
 
-.portfolio-item:hover {
+.portfolio-link {
+    display: block;
+    text-decoration: none;
+}
+
+.portfolio-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -510,4 +530,5 @@ footer .social-icon {
 .portfolio-text {
     font-size: 16px;
     line-height: 1.87;
+    color: var(--main-text-color);
 }
