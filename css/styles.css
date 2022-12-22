@@ -369,6 +369,10 @@ footer {
     font-style: normal;
 }
 
+footer .flex-wrapper {
+    align-items: baseline;
+}
+
 .contacts {
     margin-right: 70px;
 }
@@ -413,7 +417,6 @@ address li {
 
 .join .list {
     width: 206px;
-    align-items: baseline;
 }
 
 .link-social {
